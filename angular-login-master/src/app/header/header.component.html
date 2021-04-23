@@ -1,0 +1,17 @@
+<header>
+  <nav class ="navbar navbar-expand-md navbar-dark bg-primary">
+  <div><a class="navbar-brand">MyLoginApp</a></div>
+  
+
+  <ul class="navbar-nav">
+    <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/" class="navbar-brand">View Patient</a></li>
+    <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/addemployee" class="navbar-brand">Add New patient</a></li>
+    <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="navbar-brand">Login</a></li>
+    <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="navbar-brand">LogOut</a></li>
+  
+  
+  </ul>
+  
+  </nav>
+  
+  </header>
